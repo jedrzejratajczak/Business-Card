@@ -1,1 +1,65 @@
 @import 'reset';
+
+body {
+  background: linear-gradient(
+    -20deg,
+    #be7cf6,
+    #9142d8,
+    #6620aa,
+    #8957c2,
+    #6d3fae,
+    #4d2497,
+    #6d42c3
+  );
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  max-width: 280px;
+  margin: 1.3rem auto;
+  color: #fff;
+}
+
+.header {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: min-content 1fr;
+  align-items: center;
+
+  &__text {
+    display: grid;
+    grid-template-areas:
+      'part1'
+      'part2'
+      'part3'
+      'part4';
+    font-size: 2.8rem;
+
+    &--part1 {
+      grid-area: part1;
+    }
+
+    &--part2 {
+      grid-area: part2;
+    }
+
+    &--part3 {
+      grid-area: part3;
+    }
+
+    &--part4 {
+      grid-area: part4;
+    }
+
+    &--highlight {
+      color: #d25dda;
+    }
+  }
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__menu-desktop {
+    display: none;
+  }
+}
