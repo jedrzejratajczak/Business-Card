@@ -12,7 +12,7 @@ body {
     #6d42c3
   );
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  max-width: 280px;
+  max-width: 270px;
   margin: 1.3rem auto;
   color: #fff;
 }
@@ -24,29 +24,10 @@ body {
   align-items: center;
 
   &__text {
-    display: grid;
-    grid-template-areas:
-      'part1'
-      'part2'
-      'part3'
-      'part4';
+    display: flex;
+    flex-direction: column;
+    width: 90%;
     font-size: 2.8rem;
-
-    &--part1 {
-      grid-area: part1;
-    }
-
-    &--part2 {
-      grid-area: part2;
-    }
-
-    &--part3 {
-      grid-area: part3;
-    }
-
-    &--part4 {
-      grid-area: part4;
-    }
 
     &--highlight {
       color: #d25dda;
