@@ -1,6 +1,12 @@
 @import 'reset';
 
-body {
+//// VARIABLES ////
+$font-color: #fff;
+$highlight-color: #d25dda;
+$secondary-color: #d59ffd;
+
+//// SITE WRAPPER ////
+.site-wrapper {
   background: linear-gradient(
     -20deg,
     #be7cf6,
@@ -14,23 +20,29 @@ body {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   max-width: 270px;
   margin: 1.3rem auto;
-  color: #fff;
+  color: $font-color;
 }
 
+.sections-wrapper {
+  display: grid;
+  gap: 5rem;
+}
+
+//// HEADER SECTION ////
 .header {
-  height: 100vh;
   display: grid;
   grid-template-rows: min-content 1fr;
   align-items: center;
 
   &__text {
+    width: 90%;
+    margin: 3.5em 0 3em 0;
     display: flex;
     flex-direction: column;
-    width: 90%;
     font-size: 2.8rem;
 
     &--highlight {
-      color: #d25dda;
+      color: $highlight-color;
     }
   }
 }
@@ -42,5 +54,58 @@ body {
 
   &__menu-desktop {
     display: none;
+  }
+}
+
+//// ABOUT SECTION ////
+.about {
+  &__header {
+    text-align: right;
+    margin-bottom: 1em;
+  }
+
+  &__body {
+    display: grid;
+    grid-template-areas:
+      'intro'
+      'image'
+      'details'
+      'download';
+    gap: 1em;
+  }
+
+  &__image {
+    width: 100%;
+    border-radius: 20px;
+    grid-area: image;
+  }
+
+  &__intro {
+    grid-area: intro;
+    font-size: 1.2rem;
+    display: grid;
+    gap: 1em;
+
+    &--highlight {
+      color: $highlight-color;
+    }
+  }
+
+  &__details {
+    grid-area: details;
+    color: $secondary-color;
+    font-size: 0.8rem;
+  }
+
+  &__download {
+    padding: 0.5em 1em;
+    border: 2px solid $secondary-color;
+    outline-color: $secondary-color;
+    border-radius: 12px;
+    background: transparent;
+    color: $font-color;
+    font-size: 0.8rem;
+    grid-area: download;
+    justify-self: center;
   }
 }

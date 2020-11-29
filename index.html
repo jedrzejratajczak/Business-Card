@@ -6,7 +6,7 @@
     <title>Web Developer - Jedrzej Ratajczak</title>
     <link rel="stylesheet" href="./style/style.min.css" />
   </head>
-  <body>
+  <body class="site-wrapper">
     <header class="header">
       <nav class="navbar">
         <div class="navbar__logo">
@@ -107,17 +107,47 @@
         <span class="header__text--highlight">FOR YOU</span>
       </h1>
     </header>
-    <main>
-      <section id="about-me">
-        <h2>About me</h2>
-        <article>
-          <!-- <div><img src="./images/me.png" alt="Author's picture" /></div> -->
-          <div>
+    <main class="sections-wrapper">
+      <section id="about" class="about">
+        <h2 class="about__header">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="250"
+            height="100"
+            viewBox="0 0 669 159"
+          >
+            <text
+              id="About_me"
+              data-name="About me"
+              transform="translate(4 125)"
+              fill="none"
+              stroke="#d59ffd"
+              stroke-width="4"
+              font-size="130"
+              font-family="GillSansMT-Bold, Gill Sans MT"
+              font-weight="700"
+              letter-spacing="0.05em"
+              opacity="0.3"
+            >
+              <tspan x="0" y="0">About me</tspan>
+            </text>
+          </svg>
+        </h2>
+        <article class="about__body">
+          <img
+            class="about__image"
+            src="./images/me.png"
+            alt="Author's picture"
+          />
+          <div class="about__intro">
             <p>Hello there!</p>
             <p>
-              My name is Jędrzej and I <span>create</span> and
-              <span>code</span> websites.
+              My name is Jędrzej and I
+              <span class="about__intro--highlight">create</span> and
+              <span class="about__intro--highlight">code</span> websites.
             </p>
+          </div>
+          <div class="about__details">
             <p>
               I'm currently living and studying in Wrocław, Poland. I got 21
               years. Besides of my study I'm learning front-end and back-end
@@ -125,7 +155,7 @@
               should be created, not just could.
             </p>
           </div>
-          <button>
+          <button class="about__download">
             <span>
               <!-- <svg
                 xmlns="http://www.w3.org/2000/svg"
