@@ -2,11 +2,19 @@
 
 //// VARIABLES ////
 $font-color: #fff;
+$primary-font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+  sans-serif;
 $highlight-color: #d25dda;
 $secondary-color: #d59ffd;
+$main-text-size: 4rem;
+$site-width: 27rem;
+$mobile-display: block;
+$desktop-display: none;
 
-//// SITE WRAPPER ////
+//// WRAPPERS ////
 .site-wrapper {
+  max-width: $site-width;
+  margin: 2.5rem auto;
   background: linear-gradient(
     -20deg,
     #be7cf6,
@@ -22,62 +30,91 @@ $secondary-color: #d59ffd;
     #5e34ae,
     #6d42c3
   );
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  max-width: 270px;
-  margin: 1.3rem auto;
   color: $font-color;
+  font-family: $primary-font-family;
 }
 
-.sections-wrapper {
-  display: grid;
-  gap: 5rem;
-}
-
-//// HEADER SECTION ////
+//// HEADER ////
 .header {
+  height: 90vh;
   display: grid;
   grid-template-rows: min-content 1fr;
   align-items: center;
-
-  &__text {
-    width: 90%;
-    margin: 3.5em 0 3em 0;
-    display: flex;
-    flex-direction: column;
-    font-size: 2.8rem;
-
-    &--highlight {
-      color: $highlight-color;
-    }
-  }
 }
 
 .navbar {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   align-items: center;
 
-  &__menu-desktop {
-    display: none;
+  &__home {
+    justify-self: flex-start;
+  }
+
+  &__menu {
+    justify-self: flex-end;
+  }
+
+  &__menu--desktop {
+    display: $desktop-display;
+  }
+
+  &__menu--mobile {
+    display: $mobile-display;
+    outline-color: $secondary-color;
+    background: transparent;
+    cursor: pointer;
+  }
+
+  &__icon {
+    width: 3rem;
+  }
+}
+
+.main-text {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  font-size: $main-text-size;
+
+  &__highlight {
+    color: $highlight-color;
+  }
+
+  &__inseparable {
+    white-space: nowrap;
+  }
+}
+
+@mixin section {
+}
+
+.section {
+  display: grid;
+
+  &__header {
+    width: 90%;
+    margin-bottom: 3em;
+
+    &--alternative {
+      justify-self: flex-end;
+    }
+  }
+
+  &__content {
+    margin-bottom: 5em;
   }
 }
 
 //// ABOUT SECTION ////
 .about {
-  &__header {
-    text-align: right;
-    margin-bottom: 1em;
-  }
-
-  &__body {
-    display: grid;
-    grid-template-areas:
-      'intro'
-      'image'
-      'details'
-      'download';
-    gap: 1em;
-  }
+  display: grid;
+  grid-template-areas:
+    'intro'
+    'image'
+    'details'
+    'download';
+  gap: 2em;
 
   &__image {
     width: 100%;
@@ -86,31 +123,40 @@ $secondary-color: #d59ffd;
   }
 
   &__intro {
-    grid-area: intro;
-    font-size: 1.2rem;
     display: grid;
+    grid-area: intro;
     gap: 1em;
+    font-size: 1.7rem;
+  }
 
-    &--highlight {
-      color: $highlight-color;
-    }
+  &__highlight-text {
+    color: $highlight-color;
   }
 
   &__details {
     grid-area: details;
     color: $secondary-color;
-    font-size: 0.8rem;
+    font-size: 1.1rem;
   }
+}
 
-  &__download {
-    padding: 0.5em 1em;
-    border: 2px solid $secondary-color;
-    outline-color: $secondary-color;
-    border-radius: 12px;
-    background: transparent;
-    color: $font-color;
-    font-size: 0.8rem;
-    grid-area: download;
-    justify-self: center;
+.download {
+  width: 100px;
+  padding: 0.5em 0;
+  border: 2px solid $secondary-color;
+  border-radius: 8px;
+  outline-color: $secondary-color;
+  display: flex;
+  grid-area: download;
+  justify-content: space-evenly;
+  justify-self: center;
+  align-items: center;
+  background: transparent;
+  color: $font-color;
+  font-size: 1rem;
+
+  &__icon {
+    width: 10%;
+    height: auto;
   }
 }
