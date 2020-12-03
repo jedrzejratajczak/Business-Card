@@ -3,6 +3,7 @@
 //// VARIABLES ////
 $primary-font-color: #fff;
 $secondary-font-color: #58388b;
+$secondary-font-color-bright: #d59ffd;
 $primary-font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
   sans-serif;
 $highlight-color: #d25dda;
@@ -91,6 +92,7 @@ $tile-size: 100px;
 //// SECTIONS ////
 .section {
   display: grid;
+  overflow: hidden;
 
   &__header {
     width: 90%;
@@ -98,6 +100,10 @@ $tile-size: 100px;
 
     &--alternative {
       justify-self: flex-end;
+    }
+
+    &--small {
+      width: 70%;
     }
   }
 
@@ -229,5 +235,76 @@ $tile-size: 100px;
 
   &__details {
     font-size: 0.9rem;
+  }
+}
+
+//// PORTFOLIO SECTION ////
+.projects {
+  display: grid;
+  grid-template-rows: 1fr min-content;
+  gap: 1em;
+
+  &__list {
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(2, min-content);
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__list-item {
+    height: 50px;
+  }
+
+  &__link {
+    text-decoration: none;
+  }
+
+  &__title {
+    color: $secondary-font-color-bright;
+    font-size: 1.5rem;
+    white-space: nowrap;
+  }
+
+  &__link:hover &__title {
+    color: $primary-font-color;
+  }
+
+  &__line {
+    padding: 5px 5px;
+    position: relative;
+    left: 35%;
+    color: transparent;
+    transition: 0.3s left;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: -35%;
+      top: 50%;
+      width: 35%;
+      border-bottom: 2px solid $primary-font-color;
+      transform: translateY(-50%);
+      transition: 0.3s width, 0.3s left;
+    }
+  }
+
+  &__link:hover &__line {
+    color: $secondary-font-color-bright;
+    left: 15%;
+
+    &::before {
+      left: -15%;
+      width: 15%;
+    }
+  }
+
+  &__details {
+    display: grid;
+    gap: 1.5em;
+  }
+
+  &__image {
+    width: 100%;
+    border-radius: 15px;
   }
 }
