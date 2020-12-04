@@ -426,4 +426,8 @@ $tile-size: 100px;
   width: 100px;
   color: #e9cbff;
   font-size: 0.8rem;
+
+  &__inseparable {
+    white-space: nowrap;
+  }
 }
