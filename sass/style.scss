@@ -422,8 +422,10 @@ $tile-size: 100px;
 
 //// COPYRIGHT ////
 .copyright {
-  margin-left: auto;
-  width: 100px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
   color: #e9cbff;
   font-size: 0.8rem;
 
