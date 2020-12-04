@@ -147,7 +147,6 @@ $tile-size: 100px;
 }
 
 @mixin button {
-  border: 2px soli $secondary-color;
   border-radius: 8px;
   outline-color: $secondary-color;
   color: $primary-font-color;
@@ -156,6 +155,7 @@ $tile-size: 100px;
 
 .download {
   @include button;
+  border: 2px solid $secondary-color;
   width: 100px;
   padding: 0.5em 0;
   display: flex;
