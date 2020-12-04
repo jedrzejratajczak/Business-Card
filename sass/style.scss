@@ -146,21 +146,25 @@ $tile-size: 100px;
   }
 }
 
-.download {
-  width: 100px;
-  padding: 0.5em 0;
-  border: 2px solid $secondary-color;
+@mixin button {
+  border: 2px soli $secondary-color;
   border-radius: 8px;
   outline-color: $secondary-color;
+  color: $primary-font-color;
+  cursor: pointer;
+}
+
+.download {
+  @include button;
+  width: 100px;
+  padding: 0.5em 0;
   display: flex;
   grid-area: download;
   justify-content: space-evenly;
   justify-self: center;
   align-items: center;
   background: transparent;
-  color: $primary-font-color;
   font-size: 1rem;
-  cursor: pointer;
 
   &__icon {
     width: 10%;
@@ -307,4 +311,119 @@ $tile-size: 100px;
     width: 100%;
     border-radius: 15px;
   }
+}
+
+//// CONTACT SECTION ////
+.contact {
+  padding: 1em;
+  border-radius: 20px;
+  display: grid;
+  justify-items: center;
+  background-color: #fff;
+
+  &__info {
+    padding: 2.5em;
+    display: grid;
+    gap: 2em;
+    background-color: #9948dd;
+    border-radius: 20px;
+    box-sizing: border-box;
+  }
+
+  &__header {
+    font-size: 2rem;
+  }
+
+  &__details {
+    width: 60%;
+    font-size: 0.9rem;
+    line-height: 1.12rem;
+    color: #eed6ff;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 0.7em;
+  }
+
+  &__icon-set {
+    display: grid;
+    grid-auto-columns: min-content;
+    gap: 1.5em;
+    place-items: center;
+  }
+
+  &__icon-wrapper {
+    grid-row: 1;
+  }
+
+  &__icon {
+    width: 13px;
+
+    &--large {
+      width: 18px;
+    }
+  }
+}
+
+.form {
+  width: 100%;
+  margin: 2em 0 1em 0;
+  display: grid;
+  gap: 1em;
+  justify-items: center;
+
+  &__entry {
+    position: relative;
+    width: 90%;
+    height: 30px;
+
+    &--large {
+      height: 100px;
+    }
+  }
+
+  &__label {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    color: #9948dd;
+  }
+
+  &__input {
+    position: absolute;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #9948dd;
+    outline: none;
+    left: 0;
+    bottom: 0;
+    color: $secondary-font-color;
+
+    &--area {
+      height: 82%;
+      resize: none;
+    }
+  }
+
+  &__button {
+    @include button;
+    padding: 1em;
+    margin-top: 1em;
+    background-color: #9948dd;
+
+    &:hover {
+      background-color: $secondary-font-color;
+    }
+  }
+}
+
+//// COPYRIGHT ////
+.copyright {
+  margin-left: auto;
+  width: 100px;
+  color: #e9cbff;
+  font-size: 0.8rem;
 }
