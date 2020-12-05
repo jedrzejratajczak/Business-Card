@@ -1,0 +1,26 @@
+$secondary-font-family: 'Times New Roman', Times, serif;
+
+//// WRAPPERS ////
+.site-wrapper {
+  max-width: 90%;
+}
+
+.navbar {
+  &__menu--desktop {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    place-items: center;
+    font-family: $secondary-font-family;
+    font-size: 1.5rem;
+
+    a:link {
+      color: #d59ffd;
+      text-decoration: none;
+    }
+  }
+
+  &__menu--mobile {
+    display: none;
+  }
+}
