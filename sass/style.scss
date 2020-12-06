@@ -172,7 +172,6 @@ $secondary-color: #d59ffd;
 }
 
 //// SKILLS SECTION ////
-$tile-size: 100px;
 .tiles {
   display: flex;
   flex-wrap: wrap;
@@ -180,8 +179,8 @@ $tile-size: 100px;
   place-items: center;
 
   &__tile {
-    width: $tile-size;
-    height: $tile-size;
+    width: 100px;
+    height: 100px;
     margin: 2em 1em;
   }
 
@@ -202,6 +201,10 @@ $tile-size: 100px;
     justify-content: center;
     background: linear-gradient(#9948dd, #4d246f);
     transition: 0.3s border-bottom-left-radius, 0.3s border-bottom-right-radius;
+
+    &--unactive {
+      background: linear-gradient(#a28bb4, #61506e);
+    }
   }
 
   &__icon {
@@ -223,6 +226,10 @@ $tile-size: 100px;
     background-color: #fff;
     color: $secondary-font-color;
     text-align: center;
+
+    &--unactive {
+      color: grey;
+    }
   }
 
   &__header {

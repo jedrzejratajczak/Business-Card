@@ -5,6 +5,12 @@ $secondary-font-family: 'Times New Roman', Times, serif;
   max-width: 90%;
 }
 
+@media (min-width: 768px) {
+  .site-wrapper {
+    max-width: 733px;
+  }
+}
+
 //// HEADER ////
 .navbar {
   &__menu--desktop {
