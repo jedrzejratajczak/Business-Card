@@ -1,0 +1,100 @@
+//// OTHER ////
+@media (min-width: 1024px) {
+  .site-wrapper {
+    max-width: 930px;
+  }
+}
+
+//// HEADER ////
+.navbar {
+  &__menu--desktop {
+    font-size: 2.5rem;
+  }
+
+  &__icon {
+    width: 50px;
+  }
+}
+
+.main-text {
+  font-size: 6rem;
+}
+
+//// SECTIONS ////
+.section {
+  &__header {
+    width: 60%;
+
+    &--small {
+      width: 40%;
+    }
+  }
+}
+
+//// ABOUT SECTION ////
+.about {
+  gap: 6em;
+
+  &__intro {
+    font-size: 3rem;
+  }
+
+  &__details {
+    font-size: 2rem;
+  }
+}
+
+.download {
+  width: 150px;
+  font-size: 1.5rem;
+}
+
+//// SKILLS SECTION ////
+.tiles {
+  &__tile {
+    width: 130px;
+    height: 130px;
+    margin: 4em 7%;
+  }
+
+  &__header {
+    font-size: 1.5rem;
+  }
+
+  &__details {
+    font-size: 1.1rem;
+  }
+}
+
+//// PORTFOLIO SECTION ////
+.projects {
+  &__about {
+    font-size: 1.5rem;
+  }
+}
+
+//// CONTACT SECTION ////
+.contact {
+  grid-template-columns: 43% 55%;
+  justify-content: space-between;
+  justify-items: center;
+}
+
+.form {
+  grid-template-columns: repeat(2, 1fr);
+
+  &__label {
+    font-size: 1.3rem;
+  }
+
+  &__entry--large {
+    width: 95%;
+    grid-column: span 2;
+  }
+
+  &__button {
+    padding: 0.9em;
+    grid-column: span 2;
+    font-size: 1.2rem;
+  }
+}

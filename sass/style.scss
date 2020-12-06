@@ -9,7 +9,7 @@ $primary-font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
 $highlight-color: #d25dda;
 $secondary-color: #d59ffd;
 
-//// WRAPPERS ////
+//// OTHER ////
 .site-wrapper {
   max-width: 80%;
   margin: 2.5em auto;
@@ -32,6 +32,17 @@ $secondary-color: #d59ffd;
   font-family: $primary-font-family;
 }
 
+:root {
+  scroll-behavior: smooth;
+}
+
+@mixin button {
+  border-radius: 8px;
+  outline-color: $secondary-color;
+  color: $primary-font-color;
+  cursor: pointer;
+}
+
 //// HEADER ////
 .header {
   height: 90vh;
@@ -47,11 +58,11 @@ $secondary-color: #d59ffd;
   align-items: center;
 
   &__home {
-    justify-self: flex-start;
+    justify-self: left;
   }
 
   &__menu {
-    justify-self: flex-end;
+    justify-self: right;
 
     &--desktop {
       display: none;
@@ -145,18 +156,11 @@ $secondary-color: #d59ffd;
   }
 }
 
-@mixin button {
-  border-radius: 8px;
-  outline-color: $secondary-color;
-  color: $primary-font-color;
-  cursor: pointer;
-}
-
 .download {
   @include button;
-  border: 2px solid $secondary-color;
   width: 110px;
   padding: 0.5em 0.2em;
+  border: 2px solid $secondary-color;
   display: flex;
   grid-area: download;
   justify-content: space-evenly;
@@ -181,7 +185,7 @@ $secondary-color: #d59ffd;
   &__tile {
     width: 100px;
     height: 100px;
-    margin: 2em 1em;
+    margin: 3em 1em;
   }
 
   &__tile:hover &__description {
@@ -315,6 +319,7 @@ $secondary-color: #d59ffd;
 
   &__about {
     font-size: 1.3rem;
+    line-height: 1.1;
   }
 }
 

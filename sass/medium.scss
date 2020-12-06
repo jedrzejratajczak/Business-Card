@@ -1,35 +1,37 @@
+//// VARIABLES ////
 $secondary-font-family: 'Times New Roman', Times, serif;
+$primary-font-color: #fff;
 
-//// WRAPPERS ////
+//// OTHER ////
 .site-wrapper {
   max-width: 90%;
 }
 
-@media (min-width: 768px) {
-  .site-wrapper {
-    max-width: 733px;
-  }
-}
-
 //// HEADER ////
 .navbar {
-  &__menu--desktop {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    place-items: center;
-    font-family: $secondary-font-family;
-    font-size: 1.7rem;
+  &__menu {
+    &--desktop {
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      place-items: center;
+      font-family: $secondary-font-family;
+      font-size: 1.7rem;
 
-    a:link,
-    a:visited {
-      color: #d59ffd;
-      text-decoration: none;
+      a:link,
+      a:visited {
+        color: #d59ffd;
+        text-decoration: none;
+      }
+
+      a:hover {
+        color: $primary-font-color;
+      }
     }
-  }
 
-  &__menu--mobile {
-    display: none;
+    &--mobile {
+      display: none;
+    }
   }
 }
 
@@ -54,15 +56,16 @@ $secondary-font-family: 'Times New Roman', Times, serif;
     'image intro'
     'image details'
     'download download';
-  gap: 2em;
 
   &__intro {
     width: 90%;
+    margin-left: auto;
     font-size: 2rem;
   }
 
   &__details {
     width: 90%;
+    margin-left: auto;
     font-size: 1.5rem;
   }
 }
@@ -99,6 +102,19 @@ $secondary-font-family: 'Times New Roman', Times, serif;
 }
 
 //// PORTFOLIO SECTION ////
+.projects {
+  &__title {
+    font-size: 2rem;
+  }
+
+  &__line {
+    font-size: 1.2rem;
+    &::before {
+      border-bottom: 3px solid $primary-font-color;
+    }
+  }
+}
+
 @media (min-width: 570px) {
   .projects {
     grid-template: 1fr / 30% 1fr;
