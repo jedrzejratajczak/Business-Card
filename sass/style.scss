@@ -10,6 +10,10 @@ $highlight-color: #d25dda;
 $secondary-color: #d59ffd;
 
 //// OTHER ////
+:root {
+  scroll-behavior: smooth;
+}
+
 .site-wrapper {
   max-width: 80%;
   margin: 2.5em auto;
@@ -32,15 +36,18 @@ $secondary-color: #d59ffd;
   font-family: $primary-font-family;
 }
 
-:root {
-  scroll-behavior: smooth;
-}
-
 @mixin button {
   border-radius: 8px;
   outline-color: $secondary-color;
   color: $primary-font-color;
   cursor: pointer;
+}
+
+.site-back {
+  position: fixed;
+  width: 50px;
+  bottom: 5%;
+  right: 10%;
 }
 
 //// HEADER ////
