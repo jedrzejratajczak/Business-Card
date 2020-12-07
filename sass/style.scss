@@ -52,7 +52,7 @@ $secondary-color: #d59ffd;
 
 //// HEADER ////
 .header {
-  height: 90vh;
+  height: 100vh;
   display: grid;
   grid-template-rows: min-content 1fr;
   align-items: center;
@@ -184,6 +184,7 @@ $secondary-color: #d59ffd;
   &__wrapper {
     justify-self: center;
     grid-area: download;
+    text-decoration: none;
   }
 }
 
@@ -337,6 +338,7 @@ $secondary-color: #d59ffd;
 
 //// CONTACT SECTION ////
 .contact {
+  position: relative;
   padding: 1em;
   border-radius: 20px;
   display: grid;
@@ -368,6 +370,11 @@ $secondary-color: #d59ffd;
     align-items: center;
     gap: 0.7em;
     font-size: 1.2rem;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: inherit;
   }
 
   &__icon-set {
@@ -439,6 +446,15 @@ $secondary-color: #d59ffd;
 
     &:hover {
       background-color: $secondary-font-color;
+    }
+
+    &--disabled {
+      background-color: #a499af;
+      cursor: not-allowed;
+
+      &:hover {
+        background-color: #6f6875;
+      }
     }
   }
 }

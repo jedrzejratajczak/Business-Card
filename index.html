@@ -164,11 +164,7 @@
                 how things should be created, not just could.
               </p>
             </div>
-            <a
-              class="download__wrapper"
-              href="./content/cv.pdf"
-              target="_blank"
-            >
+            <a class="download__wrapper" href="./content/cv.pdf" download>
               <button class="download">
                 <span class="download__icon">
                   <svg
@@ -491,7 +487,11 @@
                     fill="#fff"
                   />
                 </svg>
-                <span>+48 662 595 720</span>
+                <span>
+                  <a class="contact__link" href="tel:+48662595720">
+                    +48 662 595 720
+                  </a>
+                </span>
               </div>
               <div class="contact__item">
                 <svg
@@ -507,7 +507,14 @@
                     fill="#fff"
                   />
                 </svg>
-                <span>jedrzej.ratajczak1@gmail.com</span>
+                <span>
+                  <a
+                    class="contact__link"
+                    href="mailto:jedrzej.ratajczak1@gmail.com"
+                  >
+                    jedrzej.ratajczak1@gmail.com
+                  </a>
+                </span>
               </div>
               <div class="contact__item">
                 <svg
@@ -587,7 +594,6 @@
                   name="first-name"
                   id="first-name-input"
                   type="text"
-                  disabled
                 />
               </div>
               <div class="form__entry">
@@ -599,7 +605,6 @@
                   name="last-name"
                   id="last-name-input"
                   type="text"
-                  disabled
                 />
               </div>
               <div class="form__entry">
@@ -609,7 +614,6 @@
                   name="mail"
                   id="mail-input"
                   type="text"
-                  disabled
                 />
               </div>
               <div class="form__entry">
@@ -619,7 +623,6 @@
                   name="topic"
                   id="topic-input"
                   type="text"
-                  disabled
                 />
               </div>
               <div class="form__entry form__entry--large">
@@ -628,10 +631,11 @@
                   class="form__input form__input--area"
                   name="message"
                   id="message-input"
-                  disabled
                 ></textarea>
               </div>
-              <button class="form__button">Send message</button>
+              <button class="form__button form__button--disabled" disabled>
+                Send message
+              </button>
             </form>
           </div>
         </article>
