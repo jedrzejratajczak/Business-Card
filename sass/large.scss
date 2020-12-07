@@ -73,7 +73,11 @@
 //// PORTFOLIO SECTION ////
 .projects {
   &__about {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
+  }
+
+  &__line {
+    font-size: 1.4rem;
   }
 }
 
@@ -89,6 +93,7 @@
 
   &__label {
     font-size: 1.3rem;
+    top: -3px;
   }
 
   &__entry--large {

@@ -150,7 +150,7 @@ $secondary-color: #d59ffd;
       transparent 5%,
       transparent 100%
     ),
-    linear-gradient(135deg, rgb(109, 66, 195), rgb(190, 124, 246));
+    linear-gradient(135deg, rgb(93, 55, 170), rgb(147, 89, 199));
 
   color: $primary-font-color;
   font-family: $primary-font-family;
@@ -307,6 +307,7 @@ $secondary-color: #d59ffd;
     grid-area: intro;
     gap: 1em;
     font-size: 1.7rem;
+    text-align: justify;
   }
 
   &__highlight-text {
@@ -318,6 +319,7 @@ $secondary-color: #d59ffd;
     color: $secondary-color;
     font-size: 1.3rem;
     line-height: 1.1;
+    text-align: justify;
   }
 }
 
@@ -490,7 +492,8 @@ $secondary-color: #d59ffd;
 
   &__about {
     font-size: 1.3rem;
-    line-height: 1.1;
+    line-height: 1.4;
+    text-align: justify;
   }
 }
 
