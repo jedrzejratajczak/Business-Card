@@ -123,22 +123,22 @@ $secondary-color: #d59ffd;
     height: 20px;
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.8);
-    transform: translateX(-50%);
+    transform: translate(-50%, 0);
     animation: ball-movement ease 1.5s infinite;
   }
 }
 
 @keyframes ball-movement {
   0% {
-    top: 10%;
+    transform: translate(-50%, 0%);
   }
 
   50% {
-    top: 50%;
+    transform: translate(-50%, 100%);
   }
 
   100% {
-    top: 50%;
+    transform: translate(-50%, 100%);
   }
 }
 
