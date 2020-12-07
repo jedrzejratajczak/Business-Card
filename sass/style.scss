@@ -169,9 +169,9 @@ $secondary-color: #d59ffd;
   padding: 0.5em 0.2em;
   border: 2px solid $secondary-color;
   display: flex;
-  grid-area: download;
+  // grid-area: download;
   justify-content: space-evenly;
-  justify-self: center;
+  // justify-self: center;
   align-items: center;
   background: transparent;
   font-size: 1.2rem;
@@ -179,6 +179,11 @@ $secondary-color: #d59ffd;
   &__icon {
     width: 13%;
     height: auto;
+  }
+
+  &__wrapper {
+    justify-self: center;
+    grid-area: download;
   }
 }
 
