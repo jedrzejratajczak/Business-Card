@@ -135,6 +135,6 @@ Project Link: [https://github.com/Mrozelek/Business-Card](https://github.com/Mro
 [stars-url]: https://github.com/Mrozelek/Business-Card/stargazers
 [issues-shield]: https://img.shields.io/github/issues/Mrozelek/Business-Card.svg?style=for-the-badge
 [issues-url]: https://github.com/Mrozelek/Business-Card/issues
-[license-shield]: https://img.shields.io/github/license/Mrozelek/Business-Card.svg?style=for-the-badge
+[license-shield]: https://img.shields.io/github/license/Mrozelek/Business-Card.svg
 [license-url]: https://github.com/Mrozelek/Business-Card/LICENSE
 [product-screenshot]: images/screenshot.png
