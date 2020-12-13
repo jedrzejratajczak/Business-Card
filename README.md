@@ -127,14 +127,14 @@ Project Link: [https://github.com/Mrozelek/Business-Card](https://github.com/Mro
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/Mrozelek/Business-Card.svg
+[contributors-shield]: https://img.shields.io/github/contributors/Mrozelek/Business-Card.svg?style=for-the-badge
 [contributors-url]: https://github.com/Mrozelek/Business-Card/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/Mrozelek/Business-Card.svg
+[forks-shield]: https://img.shields.io/github/forks/Mrozelek/Business-Card.svg?style=for-the-badge
 [forks-url]: https://github.com/Mrozelek/Business-Card/network/members
-[stars-shield]: https://img.shields.io/github/stars/Mrozelek/Business-Card.svg
+[stars-shield]: https://img.shields.io/github/stars/Mrozelek/Business-Card.svg?style=for-the-badge
 [stars-url]: https://github.com/Mrozelek/Business-Card/stargazers
-[issues-shield]: https://img.shields.io/github/issues/Mrozelek/Business-Card.svg
+[issues-shield]: https://img.shields.io/github/issues/Mrozelek/Business-Card.svg?style=for-the-badge
 [issues-url]: https://github.com/Mrozelek/Business-Card/issues
-[license-shield]: https://img.shields.io/github/license/Mrozelek/Business-Card.svg
+[license-shield]: https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge
 [license-url]: https://github.com/Mrozelek/Business-Card/LICENSE
 [product-screenshot]: images/screenshot.png
