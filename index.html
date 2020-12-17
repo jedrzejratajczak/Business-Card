@@ -3,8 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="This is my business card site. Check it out to see my skills.">
-    <meta name=”robots” content=”index, follow”>
+    <meta
+      name="description"
+      content="This is my business card site. Check it out to see my skills."
+    />
+    <meta name="”robots”" content="”index," follow” />
     <title>Web Developer - Jedrzej Ratajczak</title>
     <link rel=“canonical” href=“https://mrozelek.github.io/Business-Card/” />
     <link rel="icon" href="./images/favicon.svg" />
@@ -19,6 +22,7 @@
       href="./style/large.min.css"
       media="(min-width: 768px)"
     />
+    <script src="./scripts/app.js" defer></script>
   </head>
   <body class="site-wrapper">
     <header class="header">
@@ -122,7 +126,7 @@
         </span>
         <span class="main-text__text main-text__highlight">FOR YOU</span>
       </h1>
-      <div class="scroll-sign">
+      <div id="scroll-sign" class="scroll-sign">
         <div class="scroll-sign__ball"></div>
       </div>
     </header>
@@ -647,7 +651,7 @@
         </article>
       </section>
     </main>
-    <div class="overlay">
+    <div id="overlay" class="overlay overlay--hidden">
       <a href="#">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100.252 100.24">
           <g
