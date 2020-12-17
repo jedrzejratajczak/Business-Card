@@ -74,7 +74,7 @@ const showModal = text => {
     evt.currentTarget.parentNode.parentNode.remove()
   )
 
-  document.body.appendChild(warningModalWrapper)
+  document.body.appendChild(modalWrapper)
 }
 
 const sendMessage = evt => {
