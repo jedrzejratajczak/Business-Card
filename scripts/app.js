@@ -53,59 +53,23 @@ const initProjectsSlideshow = () => {
   }, 5000)
 }
 
-const showWarningModal = text => {
-  const warningModalWrapper = document.createElement('div')
-  warningModalWrapper.style = `
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(0,0,0,0.5);
-    z-index: 10;
-  `
-  const warningModal = document.createElement('div')
+const showModal = text => {
+  const modalWrapper = document.createElement('div')
+  modalWrapper.className = 'modal__wrapper'
 
-  warningModal.style = `
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    top: 50%;
-    left: 50%;
-    width: 250px;
-    height: 150px;
-    transform: translate(-50%, -50%);
-    background-color: #fff;
-    border-radius: 10px;
-  `
-  warningModalWrapper.appendChild(warningModal)
+  const modal = document.createElement('div')
+  modal.className = 'modal'
+  modalWrapper.appendChild(modal)
 
   const textEl = document.createElement('p')
   textEl.textContent = text
-  textEl.style = `
-    color: #000;
-    font-size: 1.5rem;
-    text-align: center;
-    box-sizing: border-box;
-  `
-  warningModal.appendChild(textEl)
+  textEl.className = 'modal__text'
+  modal.appendChild(textEl)
 
   const closeButton = document.createElement('button')
   closeButton.textContent = 'Close'
-  closeButton.style = `
-    padding: 1em 1.5em;
-    background-color: #ddd;
-    font-size: 1.3rem;
-    box-sizing: border-box;
-    cursor: pointer;
-    border-radius: 10px;
-    background-color: #9948dd;
-    color: #fff;
-  `
-  warningModal.appendChild(closeButton)
+  closeButton.className = 'modal__button'
+  modal.appendChild(closeButton)
   closeButton.addEventListener('click', evt =>
     evt.currentTarget.parentNode.parentNode.remove()
   )
@@ -115,7 +79,7 @@ const showWarningModal = text => {
 
 const sendMessage = evt => {
   evt.preventDefault()
-  showWarningModal('The form is not supported yet.')
+  showModal('The form is not supported yet.')
 }
 
 document.addEventListener('scroll', changeScrollSignVisibility)
