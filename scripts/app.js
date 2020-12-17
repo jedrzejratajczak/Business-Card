@@ -31,9 +31,21 @@ const changeOverlayVisibility = () => {
   else overlayEl.classList.remove('overlay--hidden')
 }
 
-const changeProjectsImage = () => {
-  let index = 0
-  setInterval(() => {
+let intervalId = 0
+let index = 0
+const changeProject = evt => {
+  clearInterval(intervalId)
+  index = evt.currentTarget.dataset.projectId
+  projectsImageEl.src = projects[index].image
+  projectsTextEl.textContent = projects[index].text
+}
+
+const initProjectsSlideshow = () => {
+  for (let listItem of projectsListEl.children) {
+    listItem.addEventListener('mouseover', changeProject)
+    listItem.addEventListener('mouseleave', initProjectsSlideshow)
+  }
+  intervalId = setInterval(() => {
     index = (index + 1) % projects.length
     projectsImageEl.src = projects[index].image
     projectsTextEl.textContent = projects[index].text
@@ -43,4 +55,4 @@ const changeProjectsImage = () => {
 document.addEventListener('scroll', changeScrollSignVisibility)
 document.addEventListener('scroll', changeOverlayVisibility)
 
-changeProjectsImage()
+initProjectsSlideshow()
