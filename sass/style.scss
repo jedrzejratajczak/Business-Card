@@ -173,6 +173,7 @@ $secondary-color: #d59ffd;
 
   &--hidden {
     opacity: 0;
+    pointer-events: none;
   }
 }
 
