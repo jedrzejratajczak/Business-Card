@@ -3,6 +3,7 @@ const overlayEl = document.querySelector('#overlay')
 const projectsListEl = document.querySelector('#projects-list')
 const projectsImageEl = document.querySelector('#projects-image')
 const projectsTextEl = document.querySelector('#projects-about')
+const contactBtn = document.querySelector('#contact-btn')
 const projects = [
   {
     image: './images/project.png',
@@ -52,7 +53,73 @@ const initProjectsSlideshow = () => {
   }, 5000)
 }
 
+const showWarningModal = text => {
+  const warningModalWrapper = document.createElement('div')
+  warningModalWrapper.style = `
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 10;
+  `
+  const warningModal = document.createElement('div')
+
+  warningModal.style = `
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    top: 50%;
+    left: 50%;
+    width: 250px;
+    height: 150px;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border-radius: 10px;
+  `
+  warningModalWrapper.appendChild(warningModal)
+
+  const textEl = document.createElement('p')
+  textEl.textContent = text
+  textEl.style = `
+    color: #000;
+    font-size: 1.5rem;
+    text-align: center;
+    box-sizing: border-box;
+  `
+  warningModal.appendChild(textEl)
+
+  const closeButton = document.createElement('button')
+  closeButton.textContent = 'Close'
+  closeButton.style = `
+    padding: 1em 1.5em;
+    background-color: #ddd;
+    font-size: 1.3rem;
+    box-sizing: border-box;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: #9948dd;
+    color: #fff;
+  `
+  warningModal.appendChild(closeButton)
+  closeButton.addEventListener('click', evt =>
+    evt.currentTarget.parentNode.parentNode.remove()
+  )
+
+  document.body.appendChild(warningModalWrapper)
+}
+
+const sendMessage = evt => {
+  evt.preventDefault()
+  showWarningModal('The form is not supported yet.')
+}
+
 document.addEventListener('scroll', changeScrollSignVisibility)
 document.addEventListener('scroll', changeOverlayVisibility)
+contactBtn.addEventListener('click', sendMessage)
 
 initProjectsSlideshow()
