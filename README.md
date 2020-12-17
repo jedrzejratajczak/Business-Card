@@ -84,6 +84,7 @@ Graphics on the site were created as .svg in Adobe XD so scaling them won't brea
 * [HTML5](https://html.spec.whatwg.org)
 * [SASS](https://sass-lang.com)
 * [Adobe XD](https://www.adobe.com/products/xd.html)
+* [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
 
 
