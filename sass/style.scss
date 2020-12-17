@@ -448,6 +448,7 @@ $secondary-color: #d59ffd;
 
   &__list-item {
     height: 50px;
+    overflow: hidden;
   }
 
   &__link {
@@ -465,7 +466,7 @@ $secondary-color: #d59ffd;
   }
 
   &__line {
-    padding: 5px 5px;
+    padding: 5px 0 5px 5px;
     position: relative;
     left: 35%;
     color: transparent;
