@@ -338,14 +338,11 @@ $secondary-color: #d59ffd;
 
 .download {
   @include button;
+  justify-self: center;
+  grid-area: download;
   width: 110px;
   padding: 0.5em 0.2em;
   border: 2px solid $secondary-color;
-  display: flex;
-  // grid-area: download;
-  justify-content: space-evenly;
-  // justify-self: center;
-  align-items: center;
   background: transparent;
   font-size: 1.2rem;
 
@@ -354,10 +351,12 @@ $secondary-color: #d59ffd;
     height: auto;
   }
 
-  &__wrapper {
-    justify-self: center;
-    grid-area: download;
+  &__link {
     text-decoration: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: $primary-font-color;
   }
 }
 
