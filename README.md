@@ -19,7 +19,6 @@
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
 
 
 
@@ -136,6 +135,4 @@ Project Link: [https://github.com/Mrozelek/Business-Card](https://github.com/Mro
 [stars-url]: https://github.com/Mrozelek/Business-Card/stargazers
 [issues-shield]: https://img.shields.io/github/issues/Mrozelek/Business-Card.svg?style=for-the-badge
 [issues-url]: https://github.com/Mrozelek/Business-Card/issues
-[license-shield]: https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge
-[license-url]: https://github.com/Mrozelek/Business-Card/LICENSE
 [product-screenshot]: images/screenshot.png
