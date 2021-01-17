@@ -96,7 +96,7 @@ or
 <!-- LICENSE -->
 ## License
 
-Distributed under the MIT License. See `LICENSE` for more information.
+Distributed under the MIT License. See `LICENSE` for more information.  
 Readme created from template: https://github.com/othneildrew/Best-README-Template
 
 
@@ -104,9 +104,7 @@ Readme created from template: https://github.com/othneildrew/Best-README-Templat
 <!-- CONTACT -->
 ## Contact
 
-Jędrzej Ratajczak - jedrzej.ratajczak1@gmail.com
-
-
+Jędrzej Ratajczak - jedrzej.ratajczak1@gmail.com  
 Project Link: [https://github.com/Mrozelek/Business-Card](https://github.com/Mrozelek/Business-Card)
 
 
