@@ -10,7 +10,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/Mrozelek/Business-Card">
+  <a href="https://nilphym.github.io/Business-Card/">
     <img src="images/favicon.svg" alt="Logo" width="80" height="80">
   </a>
 
@@ -22,11 +22,11 @@
     Designed in Adobe XD.
     <br />
     <br />
-    <a href="https://mrozelek.github.io/Business-Card">View Demo</a>
+    <a href="https://nilphym.github.io/Business-Card">View Demo</a>
     ·
-    <a href="https://github.com/Mrozelek/Business-Card/issues">Report Bug</a>
+    <a href="https://github.com/nilphym/Business-Card/issues">Report Bug</a>
     ·
-    <a href="https://github.com/Mrozelek/Business-Card/issues">Request Feature</a>
+    <a href="https://github.com/nilphym/Business-Card/issues">Request Feature</a>
   </p>
 </p>
 
@@ -54,7 +54,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Business Card Screen Shot][product-screenshot]](https://mrozelek.github.io/Business-Card)
+[![Business Card Screen Shot][product-screenshot]](https://nilphym.github.io/Business-Card)
 
 The project firstly was designed in Adobe XD for both mobile and desktop environments.<br />
 When coding I started with whole HTML structure and later moved to building a mobile version according to the mobile first design rule.
@@ -76,9 +76,9 @@ Graphics on the site were created as .svg in Adobe XD so scaling them won't brea
 ## Getting Started
 
 To view the website simply: 
-* [click here](https://mrozelek.github.io/Business-Card)  
+* [click here](https://nilphym.github.io/Business-Card)  
 or
-* copy the link https://mrozelek.github.io/Business-Card paste it to your browser and load it.
+* copy the link https://nilphym.github.io/Business-Card paste it to your browser and load it.
 
 
 
@@ -105,21 +105,21 @@ Readme created from template: https://github.com/othneildrew/Best-README-Templat
 ## Contact
 
 Jędrzej Ratajczak - jedrzej.ratajczak1@gmail.com  
-Project Link: [https://github.com/Mrozelek/Business-Card](https://github.com/Mrozelek/Business-Card)
+Project Link: [https://github.com/nilphym/Business-Card](https://github.com/nilphym/Business-Card)
 
 
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/Mrozelek/Business-Card.svg?style=for-the-badge
-[contributors-url]: https://github.com/Mrozelek/Business-Card/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/Mrozelek/Business-Card.svg?style=for-the-badge
-[forks-url]: https://github.com/Mrozelek/Business-Card/network/members
-[stars-shield]: https://img.shields.io/github/stars/Mrozelek/Business-Card.svg?style=for-the-badge
-[stars-url]: https://github.com/Mrozelek/Business-Card/stargazers
-[issues-shield]: https://img.shields.io/github/issues/Mrozelek/Business-Card.svg?style=for-the-badge
-[issues-url]: https://github.com/Mrozelek/Business-Card/issues
+[contributors-shield]: https://img.shields.io/github/contributors/nilphym/Business-Card.svg?style=for-the-badge
+[contributors-url]: https://github.com/nilphym/Business-Card/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/nilphym/Business-Card.svg?style=for-the-badge
+[forks-url]: https://github.com/nilphym/Business-Card/network/members
+[stars-shield]: https://img.shields.io/github/stars/nilphym/Business-Card.svg?style=for-the-badge
+[stars-url]: https://github.com/nilphym/Business-Card/stargazers
+[issues-shield]: https://img.shields.io/github/issues/nilphym/Business-Card.svg?style=for-the-badge
+[issues-url]: https://github.com/nilphym/Business-Card/issues
 [license-shield]: https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge
-[license-url]: https://github.com/Mrozelek/Business-Card/LICENSE
+[license-url]: https://github.com/nilphym/Business-Card/LICENSE
 [product-screenshot]: images/screenshot.png
