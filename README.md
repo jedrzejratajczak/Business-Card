@@ -1,125 +1,40 @@
-<!-- PROJECT SHIELDS -->
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
+Business Card created in HTML5 and SASS with BEM metodology. Designed in Adobe XD.
+[View Demo](https://nilphym.github.io/Business-Card)
 
 
-
-<!-- PROJECT LOGO -->
-<br />
-<p align="center">
-  <a href="https://nilphym.github.io/Business-Card/">
-    <img src="images/favicon.svg" alt="Logo" width="80" height="80">
-  </a>
-
-  <h3 align="center">Business Card</h3>
-
-  <p align="center">
-    Created in HTML5 and SASS with BEM metodology.
-    <br />
-    Designed in Adobe XD.
-    <br />
-    <br />
-    <a href="https://nilphym.github.io/Business-Card">View Demo</a>
-    ·
-    <a href="https://github.com/nilphym/Business-Card/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/nilphym/Business-Card/issues">Request Feature</a>
-  </p>
-</p>
+## Table of content
+* [General info](#general-info)
+* [Screenshots](#screenshots)
+* [Technologies](#technologies)
+* [Setup](#setup)
+* [Features](#features)
+* [Changelog](#changelog)
+* [Contact](#contact)
 
 
-
-<!-- TABLE OF CONTENTS -->
-<details open="open">
-  <summary>Table of Contents</summary>
-  <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li>
-    <li><a href="#getting-started">Getting Started</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ol>
-</details>
+## General info
+The project firstly was designed in Adobe XD for both mobile and desktop environments.  
+When coding I started with whole HTML structure and later moved to building a mobile version according to the mobile first design rule.  
+For styling purposes I've used SASS preprocessor with .scss extension so I could use the BEM methodology a lot easier.  
+Graphics on the site were created as .svg in Adobe XD so scaling them won't break quality of the image.  
 
 
-
-<!-- ABOUT THE PROJECT -->
-## About The Project
-
-[![Business Card Screen Shot][product-screenshot]](https://nilphym.github.io/Business-Card)
-
-The project firstly was designed in Adobe XD for both mobile and desktop environments.<br />
-When coding I started with whole HTML structure and later moved to building a mobile version according to the mobile first design rule.
-For styling purposes I've used SASS preprocessor with .scss extension so I could use the BEM methodology a lot easier.<br />
-Graphics on the site were created as .svg in Adobe XD so scaling them won't break quality of the image.<br />
-
+## Screenshots
+[![Business Card Screen Shot][images/screenshot.png]](https://nilphym.github.io/Business-Card)
 
 
 ### Built With
-
 * [HTML5](https://html.spec.whatwg.org)
 * [SASS](https://sass-lang.com)
 * [Adobe XD](https://www.adobe.com/products/xd.html)
 * [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
 
-
-<!-- GETTING STARTED -->
 ## Getting Started
-
 To view the website simply: 
-* [click here](https://nilphym.github.io/Business-Card)  
-or
+* [click here](https://nilphym
 * copy the link https://nilphym.github.io/Business-Card paste it to your browser and load it.
 
 
-
-<!-- CONTRIBUTING -->
-## Contributing
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-
-
-<!-- LICENSE -->
-## License
-
-Distributed under the MIT License. See `LICENSE` for more information.  
-Readme created from template: https://github.com/othneildrew/Best-README-Template
-
-
-
-<!-- CONTACT -->
 ## Contact
-
-Jędrzej Ratajczak - jedrzej.ratajczak1@gmail.com  
-Project Link: [https://github.com/nilphym/Business-Card](https://github.com/nilphym/Business-Card)
-
-
-
-
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/nilphym/Business-Card.svg?style=for-the-badge
-[contributors-url]: https://github.com/nilphym/Business-Card/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/nilphym/Business-Card.svg?style=for-the-badge
-[forks-url]: https://github.com/nilphym/Business-Card/network/members
-[stars-shield]: https://img.shields.io/github/stars/nilphym/Business-Card.svg?style=for-the-badge
-[stars-url]: https://github.com/nilphym/Business-Card/stargazers
-[issues-shield]: https://img.shields.io/github/issues/nilphym/Business-Card.svg?style=for-the-badge
-[issues-url]: https://github.com/nilphym/Business-Card/issues
-[license-shield]: https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge
-[license-url]: https://github.com/nilphym/Business-Card/LICENSE
-[product-screenshot]: images/screenshot.png
+Created by **Jędrzej Ratajczak** ([@nilphym](https://github.com/nilphym)) - feel free to contact me!
