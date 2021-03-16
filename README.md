@@ -7,8 +7,6 @@ Business Card created in HTML5 and SASS with BEM metodology. Designed in Adobe X
 * [Screenshots](#screenshots)
 * [Technologies](#technologies)
 * [Setup](#setup)
-* [Features](#features)
-* [Changelog](#changelog)
 * [Contact](#contact)
 
 
@@ -23,17 +21,15 @@ Graphics on the site were created as .svg in Adobe XD so scaling them won't brea
 ![Business Card Screen Shot](images/screenshot.png)
 
 
-### Built With
+## Technologies
 * [HTML5](https://html.spec.whatwg.org)
 * [SASS](https://sass-lang.com)
 * [Adobe XD](https://www.adobe.com/products/xd.html)
 * [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
 
-## Getting Started
-To view the website simply: 
-* [click here](https://nilphym
-* copy the link https://nilphym.github.io/Business-Card paste it to your browser and load it.
+## Setup
+To view the website simply [click here](https://nilphym.github.io/Business-Card).
 
 
 ## Contact
