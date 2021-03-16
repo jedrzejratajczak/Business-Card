@@ -1,4 +1,4 @@
-Business Card created in HTML5 and SASS with BEM metodology. Designed in Adobe XD.  
+Business Card created in HTML5 and SASS with BEM metodology. Designed in Adobe XD. Fully responsive.  
 [View Demo](https://nilphym.github.io/Business-Card)
 
 
@@ -11,10 +11,10 @@ Business Card created in HTML5 and SASS with BEM metodology. Designed in Adobe X
 
 
 ## General info
-The project firstly was designed in Adobe XD for both mobile and desktop environments.  
-When coding I started with whole HTML structure and later moved to building a mobile version according to the mobile first design rule.  
-For styling purposes I've used SASS preprocessor with .scss extension so I could use the BEM methodology a lot easier.  
-Graphics on the site were created as .svg in Adobe XD so scaling them won't break quality of the image.  
+The project was designed in Adobe XD for both mobile and desktop environments.  
+Then I started with building a mobile version according to the mobile first design rule.  
+For styling purposes I've used SASS preprocessor with .scss extension so I could easily use the BEM methodology.  
+All of the graphics on the site were created as .svg in Adobe XD so scaling them won't break the quality of the images.  
 
 
 ## Screenshots
