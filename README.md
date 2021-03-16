@@ -1,4 +1,4 @@
-Business Card created in HTML5 and SASS with BEM metodology. Designed in Adobe XD.
+Business Card created in HTML5 and SASS with BEM metodology. Designed in Adobe XD.  
 [View Demo](https://nilphym.github.io/Business-Card)
 
 
