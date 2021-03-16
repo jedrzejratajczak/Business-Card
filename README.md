@@ -20,7 +20,7 @@ Graphics on the site were created as .svg in Adobe XD so scaling them won't brea
 
 
 ## Screenshots
-[![Business Card Screen Shot][images/screenshot.png]](https://nilphym.github.io/Business-Card)
+![Business Card Screen Shot](images/screenshot.png)
 
 
 ### Built With
