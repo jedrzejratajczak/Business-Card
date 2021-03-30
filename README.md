@@ -16,6 +16,8 @@ The project was designed in Adobe XD for both mobile and desktop environments.
 Then I started with building a mobile version according to the mobile first design rule.  
 For styling purposes I've used SASS preprocessor with .scss extension so I could easily use the BEM methodology.  
 All of the graphics on the site were created as .svg in Adobe XD so scaling them won't break the quality of the images.  
+Worth to mention - The site passed all of Lighthouse performance, accessibility, best practices and SEO audits.
+![Lighthouse Audits](images/lighthouse.png)
 
 
 ## Screenshots
