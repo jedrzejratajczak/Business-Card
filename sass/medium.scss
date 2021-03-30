@@ -1,6 +1,4 @@
-//// VARIABLES ////
-$secondary-font-family: 'Times New Roman', Times, serif;
-$primary-font-color: #fff;
+@import 'variables';
 
 //// OTHER ////
 .site-wrapper {
@@ -15,24 +13,18 @@ $primary-font-color: #fff;
 .navbar {
   &__menu {
     &--desktop {
+      height: auto;
       width: 100%;
-      display: grid;
+      margin: auto;
+      opacity: 1;
+      pointer-events: all;
+      border-radius: 0;
+      position: static;
       grid-template-columns: repeat(4, max-content);
-      place-items: center;
       justify-content: end;
       gap: 2em;
-      font-family: $secondary-font-family;
+      background-color: transparent;
       font-size: 1.7rem;
-
-      a:link,
-      a:visited {
-        color: #d59ffd;
-        text-decoration: none;
-      }
-
-      a:hover {
-        color: $primary-font-color;
-      }
     }
 
     &--mobile {

@@ -1,13 +1,5 @@
 @import 'reset';
-
-//// VARIABLES ////
-$primary-font-color: #fff;
-$secondary-font-color: #58388b;
-$secondary-font-color-bright: #d59ffd;
-$primary-font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
-  sans-serif;
-$highlight-color: #d25dda;
-$secondary-color: #d59ffd;
+@import 'variables';
 
 //// OTHER ////
 :root {
@@ -200,11 +192,44 @@ $secondary-color: #d59ffd;
     justify-self: right;
 
     &--desktop {
-      display: none;
+      opacity: 0;
+      pointer-events: none;
+      width: 70%;
+      height: 50%;
+      margin: 0 0 auto;
+      border-radius: 5px;
+      position: absolute;
+      top: -.5rem;
+      right: -1rem;
+      z-index: 1;
+      display: grid;
+      place-items: center;
+      background-color: rgb(147, 89, 199);
+      font-family: $secondary-font-family;
+      font-size: 3rem;
+
+      a:link,
+      a:visited {
+        color: #d59ffd;
+        text-decoration: none;
+      }
+
+      a:hover {
+        color: $primary-font-color;
+      }
+    }
+
+    &--unhidden {
+      animation: unhide .5s ease-out forwards;
+      pointer-events: all;
+    }
+
+    &--hidden {
+      animation: hide .5s ease-in forwards;
     }
 
     &--mobile {
-      outline-color: $secondary-color;
+      outline: none;
       background: transparent;
       cursor: pointer;
     }
@@ -214,6 +239,30 @@ $secondary-color: #d59ffd;
     position: relative;
     width: 30px;
     z-index: 1;
+  }
+}
+
+@keyframes unhide {
+  from {
+    opacity: 1;
+    transform: translateX(120%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes hide {
+  from {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(120%);
   }
 }
 

@@ -4,6 +4,8 @@ const projectsListEl = document.querySelector('#projects-list')
 const projectsImageEl = document.querySelector('#projects-image')
 const projectsTextEl = document.querySelector('#projects-about')
 const contactBtn = document.querySelector('#contact-btn')
+const mobileMenuBtn = document.querySelector('#mobileMenuBtn')
+const menu = document.querySelector('#menu')
 const projects = [
   {
     image: './images/project.png',
@@ -82,8 +84,24 @@ const sendMessage = evt => {
   showModal('The form is not supported yet.')
 }
 
+const toggleMobileMenu = () => {
+  if (menu.className.includes('navbar__menu--unhidden')) {
+    menu.classList.remove('navbar__menu--unhidden');
+    menu.classList.add('navbar__menu--hidden');
+    menu.addEventListener('animationend', removeMenuAnimation)
+  } else {
+    menu.classList.add('navbar__menu--unhidden');
+  }
+}
+
+const removeMenuAnimation = () => {
+  menu.removeEventListener('animationend', removeMenuAnimation)
+  menu.classList.remove('navbar__menu--hidden');
+}
+
 document.addEventListener('scroll', changeScrollSignVisibility)
 document.addEventListener('scroll', changeOverlayVisibility)
 contactBtn.addEventListener('click', sendMessage)
+mobileMenuBtn.addEventListener('click', toggleMobileMenu)
 
 initProjectsSlideshow()
