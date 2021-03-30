@@ -8,17 +8,17 @@ const mobileMenuBtn = document.querySelector('#mobileMenuBtn')
 const menu = document.querySelector('#menu')
 const projects = [
   {
-    image: './images/project.png',
+    image: './images/project.jpg',
     text:
       "Web implementation of Rock, Paper and Scissors game. Fully responsive. Written with pure HTML, CSS and JS. Game is using Local Storage to save your score when you'll leave the site.",
   },
   {
-    image: './images/project2.png',
+    image: './images/project2.jpg',
     text:
       'A simple console simulation of RFID cards scanner with MQTT data transfer feature. Program has been written in Python 3 and batch for Internet of Things course at Wroclaw University of Science and Technology.',
   },
   {
-    image: './images/project3.png',
+    image: './images/project3.jpg',
     text:
       'Fully responsive buisness card website. Designed in Adobe XD. Written in HTML5, Sass with BEM metodology and JavaScript. Used mobile first approach',
   },
