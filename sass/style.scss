@@ -551,23 +551,8 @@ $secondary-color: #d59ffd;
     color: inherit;
   }
 
-  &__icon-set {
-    display: grid;
-    grid-auto-columns: min-content;
-    gap: 1.5em;
-    place-items: center;
-  }
-
-  &__icon-wrapper {
-    grid-row: 1;
-  }
-
   &__icon {
     width: 17px;
-
-    &--large {
-      width: 22px;
-    }
   }
 }
 
